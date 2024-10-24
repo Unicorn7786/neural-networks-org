@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Neural Networks Through Organizational Flow</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Understanding Neural Networks Through Organizational Flow</h1>
+            <h2>A Novel Approach to Mechanistic Interpretability</h2>
+        </header>
+
+        <section>
+            <h2>1. Introduction: Finding Patterns in Familiar Places</h2>
+            <p>When first encountering neural networks, concepts like information bottlenecks and activation functions can feel abstract and challenging to grasp. However, by examining how organizations process information, we can build powerful intuition about neural network behavior. This analysis demonstrates these parallels through concrete examples and mathematical transformations.</p>
+            
+            <div class="learning-note">
+                <strong>Learning Approach:</strong> By mapping neural network concepts to organizational behaviors we already understand, we can make these complex systems more intuitive and accessible.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Raw Information Processing: First Layer Understanding</h2>
+            <p>Consider how a traditional organization processes initial information:</p>
+            
+            <pre><code>raw: (x, complexity) => {
+    const sigmoid = 1 / (1 + Math.exp(-x + complexity));
+    return x * sigmoid + 2;
+}</code></pre>
+
+            <div class="insight-box">
+                <h4>Key Parallels:</h4>
+                <ul>
+                    <li>The sigmoid function mirrors neural network activation functions</li>
+                    <li>Complexity parameter modulates information flow like neural bias terms</li>
+                    <li>The "+2" offset ensures baseline information passage, similar to skip connections</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Departmental Processing: Hidden Layers in Action</h2>
+            <p>The departmental level reveals how hidden layers work:</p>
+
+            <pre><code>// Traditional approach
+departmental: (x, intensity) => {
+    const threshold = 2 * intensity;
+    return x > threshold ? x - threshold : 0;
+}
+
+// Adaptive approach
+departmental: (x, intensity) => {
+    const threshold = 1.5 * intensity;
+    return x > threshold ? x - threshold * 0.8 : 0;
+}</code></pre>
+
+            <div class="insight-box">
+                <h4>Hidden Layer Insights:</h4>
+                <ul>
+                    <li>Traditional approach mirrors ReLU activation</li>
+                    <li>Adaptive approach parallels Leaky ReLU</li>
+                    <li>Threshold behavior shows feature selection process</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Organizational Context: Deep Feature Extraction</h2>
+            <pre><code>organizational: (x, complexity) => {
+    const normalized = Math.min(Math.max(x / (10 - complexity), 0), 1);
+    return (normalized * normalized * (3 - 2 * normalized) * 8) + 4;
+}</code></pre>
+
+            <div class="insight-box">
+                <h4>Feature Extraction Parallels:</h4>
+                <ul>
+                    <li>Normalization step mirrors batch normalization</li>
+                    <li>Polynomial transformation shows feature combination</li>
+                    <li>Complexity parameter controls feature depth</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Information Bottlenecks in Action</h2>
+            <p>The organizational layer demonstrates Information Bottleneck theory:</p>
+
+            <pre><code>// High-constraint bottleneck
+organizational: (x, complexity) => {
+    const normalized = Math.min(Math.max(x / (10 - complexity), 0), 1);
+    return (normalized * normalized * (3 - 2 * normalized) * 8) + 4;
+}</code></pre>
+
+            <div class="learning-note">
+                <h4>Bottleneck Effects:</h4>
+                <ul>
+                    <li>Normalization creates information constraints</li>
+                    <li>Polynomial transformation shows selective preservation</li>
+                    <li>Complexity parameter controls bottleneck width</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Learning Information Pathways: Mechanistic Interpretability</h2>
+            <pre><code>const generateData = (functions) => {
+    const data = [];
+    for(let x = 0; x <= 10; x += 0.25) {
+        data.push({
+            input: x,
+            raw: functions.raw(x, dynamicsIntensity * 2),
+            departmental: functions.departmental(x, dynamicsIntensity),
+            organizational: functions.organizational(x, dynamicsIntensity * 5),
+            executive: functions.executive(x, dynamicsIntensity)
+        });
+    }
+    return data;
+};</code></pre>
+        </section>
+
+        <section>
+            <h2>7. Security Implications: Adversarial Attacks</h2>
+            
+            <div class="security-note">
+                <h4>Vulnerability Analysis:</h4>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Attack Vector</th>
+                            <th>Neural Network</th>
+                            <th>Organizational Parallel</th>
+                        </tr>
+                        <tr>
+                            <td>Input Manipulation</td>
+                            <td>Adversarial examples</td>
+                            <td>Information framing</td>
+                        </tr>
+                        <tr>
+                            <td>Threshold Exploitation</td>
+                            <td>Decision boundary attacks</td>
+                            <td>Policy threshold manipulation</td>
+                        </tr>
+                        <tr>
+                            <td>Parameter Interference</td>
+                            <td>Weight perturbation</td>
+                            <td>Process manipulation</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>8. Defense Mechanisms</h2>
+            <pre><code>// Adaptive defense
+departmental: (x, intensity) => {
+    const threshold = 1.5 * intensity;
+    return x > threshold ? x - threshold * 0.8 : 0;
+}</code></pre>
+
+            <div class="insight-box">
+                <h4>Defense Features:</h4>
+                <ul>
+                    <li>Variable thresholds prevent pattern exploitation</li>
+                    <li>Soft boundaries reduce attack surface</li>
+                    <li>Dynamic scaling complicates adversarial planning</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>9. Practical Implications</h2>
+            <div class="learning-note">
+                <h4>Key Insights for Network Design:</h4>
+                <ul>
+                    <li>Multiple processing stages enhance decision quality</li>
+                    <li>Balance between rigid and flexible pathways improves robustness</li>
+                    <li>Information preservation must be balanced with decision clarity</li>
+                    <li>Security measures can learn from organizational defenses</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conclusion: Bridging Understanding</h2>
+            <p>Through this analysis, we've seen how organizational information flow provides a powerful lens for understanding neural networks. The parallels aren't merely metaphorical—they reveal deep truths about information processing and decision-making systems.</p>
+            
+            <div class="learning-note">
+                <em>This exploration demonstrates that neural networks aren't doing anything magical—they're processing information in ways remarkably similar to human organizations. Understanding these parallels makes deep learning concepts more concrete and intuitive while revealing shared principles of robust information processing.</em>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
